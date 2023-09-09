@@ -1,0 +1,33 @@
+﻿<Window x:Class="auto_up.WorkerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:auto_up"
+        mc:Ignorable="d"
+        Title="WorkerWindow" Height="600" Width="700">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock FontSize="40" Grid.Column="1" TextAlignment="Center" Grid.ColumnSpan="3" Margin="0,73,6,0" Grid.RowSpan="2">Окно сотрудника</TextBlock>
+        <Button x:Name="btnOrders" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" Margin="10,73,10,0" Grid.RowSpan="2" FontSize="40" Click="btnOrders_Click">Товары</Button>
+        <Button x:Name="btnStatics" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3" Margin="10,73,10,0" Grid.RowSpan="2" FontSize="40" Click="btnStatics_Click">Статистика продаж</Button>
+        <Button x:Name="btnExit" Grid.Row="6" Grid.Column="2" FontSize="40" Click="btnExit_Click">Выход</Button>
+
+    </Grid>
+</Window>

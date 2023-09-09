@@ -1,0 +1,35 @@
+﻿<Window x:Class="auto_up.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:auto_up"
+        mc:Ignorable="d"
+        Title="AdminWindow" Height="600" Width="700">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="1" Grid.Row="0" FontSize="22" TextAlignment="Center" Grid.ColumnSpan="3" Margin="10,0,15,0">Окно администратора</TextBlock>
+        <Button FontSize="23" x:Name="btnParts" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" Margin="0,73,0,0" Grid.RowSpan="2" Click="btnParts_Click">Добавление товаров</Button>
+        <Button FontSize="23" x:Name="btnStaticsDay" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Margin="0,73,0,0" Grid.RowSpan="2" Click="btnStaticsDay_Click" >Статистика продаж за день</Button>
+         <Button FontSize="23" x:Name="btnFirms" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" Margin="0,73,0,0" Grid.RowSpan="2" Click="btnFirms_Click">Добавление фирмы</Button>
+        <Button FontSize="23" x:Name="btnContract" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" Margin="0,73,0,0" Grid.RowSpan="2" Click="btnContract_Click">Добавление договора с поставщиком</Button>
+        <Button FontSize="23" x:Name="btnLogOut" Grid.Row="7" Grid.Column="3" Click="btnLogOut_Click">Выход</Button>
+    </Grid>
+</Window>

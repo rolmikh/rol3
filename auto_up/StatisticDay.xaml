@@ -1,0 +1,38 @@
+﻿<Window x:Class="auto_up.StatisticDay"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:auto_up"
+        mc:Ignorable="d"
+        Title="StatisticDay" Height="700" Width="900">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="9" Grid.Column="1" FontSize="25">День:</TextBlock>
+        <DatePicker x:Name="dateSale" Grid.Row="9" Grid.Column="2" FontSize="22"></DatePicker>
+        <Button x:Name="btnWithdraw" Grid.Row="10" Grid.Column="4" FontSize="25" Click="btnWithdraw_Click">Вывести</Button>
+        <Button x:Name="btnExit" Grid.Row="1" Grid.Column="4" FontSize="25" Click="btnExit_Click">Выход</Button>
+        <DataGrid x:Name="dtgSales" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="6" Margin="10,57,10,0" Grid.RowSpan="6"></DataGrid>
+    </Grid>
+</Window>

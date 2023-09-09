@@ -1,0 +1,64 @@
+﻿<Window x:Class="auto_up.NewFirm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:auto_up"
+        mc:Ignorable="d"
+        Title="NewFirm" Height="700" Width="900" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="2" FontSize="25" TextAlignment="Center" Grid.ColumnSpan="2" Margin="0,0,10,10">Добавление фирмы</TextBlock>
+        <TextBlock Grid.Row="8" Grid.Column="3" FontSize="20">Тип фирмы:</TextBlock>
+        <ComboBox x:Name="cmbType" Grid.Row="7" Grid.Column="4" FontSize="20" Grid.ColumnSpan="2" Margin="0,57,10,0" Grid.RowSpan="2"></ComboBox>
+        <TextBlock Grid.Row="5" Grid.Column="0" FontSize="20">Название</TextBlock>
+        <TextBox x:Name="txtTitle" Grid.Row="4" Grid.Column="1" FontSize="20" Grid.ColumnSpan="2" Margin="0,57,10,0" Grid.RowSpan="2"></TextBox>
+        <TextBlock Grid.Row="6" Grid.Column="0" FontSize="15">Юридический адрес:</TextBlock>
+        <TextBox x:Name="txtLegalAddress" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" FontSize="20" Margin="0,57,10,0" Grid.RowSpan="2"></TextBox>
+        <TextBlock Grid.Row="7" Grid.Column="0" FontSize="16">Физический адрес:</TextBlock>
+        <TextBox x:Name="txtPhysicalAddress" Grid.Row="6" Grid.Column="1" FontSize="20" Grid.ColumnSpan="2" Margin="0,57,10,0" Grid.RowSpan="2"></TextBox>
+        <TextBlock Grid.Row="10" Grid.Column="0" FontSize="20" >БИК:</TextBlock>
+        <TextBox x:Name="txtBIC" Grid.Row="9" Grid.Column="1" FontSize="20" Grid.ColumnSpan="2" Margin="0,57,10,0" Grid.RowSpan="2"></TextBox>
+        <TextBlock Grid.Row="7" Grid.Column="3" FontSize="20" >ИНН:</TextBlock>
+        <TextBox x:Name="txtINN" Grid.Row="6" Grid.Column="4" FontSize="20" Grid.ColumnSpan="2" Margin="0,57,10,0" Grid.RowSpan="2"></TextBox>
+        <TextBlock Grid.Row="5" Grid.Column="3" FontSize="20">КПП:</TextBlock>
+        <TextBox x:Name="txtKPP" Grid.Row="4" Grid.Column="4" FontSize="20" Grid.ColumnSpan="2" Margin="0,57,10,0" Grid.RowSpan="2"></TextBox>
+        <TextBlock Grid.Row="6" Grid.Column="3" FontSize="20">ОГРН:</TextBlock>
+        <TextBox x:Name="txtOGRN" Grid.Row="5" Grid.Column="4" FontSize="20" Grid.ColumnSpan="2" Margin="0,57,10,0" Grid.RowSpan="2"></TextBox>
+        <TextBlock Grid.Row="8" Grid.Column="0" FontSize="18" >Номер телефона:</TextBlock>
+        <TextBox x:Name="txtNumber" Grid.Row="7" Grid.Column="1" FontSize="20" Grid.ColumnSpan="2" Margin="0,57,10,0" Grid.RowSpan="2"></TextBox>
+        <TextBlock Grid.Row="9" Grid.Column="0" FontSize="20">Почта:</TextBlock>
+        <TextBox x:Name="txtEmail" Grid.Row="8" Grid.Column="1" FontSize="20" Grid.ColumnSpan="2" Margin="0,57,10,0" Grid.RowSpan="2"></TextBox>
+        <TextBlock Grid.Row="9" Grid.Column="3" FontSize="20">Страна:</TextBlock>
+        <ComboBox x:Name="cmbCountry" Grid.Row="8" Grid.Column="4" FontSize="20" Grid.ColumnSpan="2" Margin="0,57,10,0" Grid.RowSpan="2"></ComboBox>
+        <DataGrid x:Name="dtgFirms" Grid.ColumnSpan="6" Margin="10,57,10,28" Grid.RowSpan="5" IsReadOnly="True" SelectionChanged="dtgFirms_SelectionChanged" >
+        </DataGrid>
+        <Button x:Name="btnAdd" Grid.Row="11" Grid.Column="3" FontSize="25" Click="btnAdd_Click">Добавить</Button>
+        <Button x:Name="btnToChange" Grid.Row="11" Grid.Column="4" FontSize="25" Click="btnToChange_Click">Изменить</Button>
+        <Button x:Name="btnDelete" Grid.Row="11" Grid.Column="5" FontSize="25" Click="btnDelete_Click">Удалить</Button>
+        <Button x:Name="btnBack" Grid.Row="0" Grid.Column="5" FontSize="25" Click="btnBack_Click">Назад</Button>
+
+
+    </Grid>
+</Window>
